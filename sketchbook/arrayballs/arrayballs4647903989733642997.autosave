@@ -1,0 +1,33 @@
+int [] xPosArr, yPosArr, hArr, wArr, colArr, speedArr;
+
+
+
+
+
+void setup() {
+    size(400, 400);
+    int numOfCircles = 10;
+    xPosArr = new int [10];
+    yPosArr = new int [10];
+    hArr = new int [10];
+    wArr = new int [10];
+    colArr =  new int [10];
+    speedArr = new int [10];
+
+}
+
+void draw() {
+   
+}
+
+void initArrays(){
+     for (int i = 0; i < xPosArr.length; i++) {
+        xPosArr[i] = (int)random(20, width);
+        yPosArr[i] = 30;
+        hArr[i] = (int)random(30, height/5);
+        wArr[i] = (int)random(30, width/5);
+        colArr[i] = random(0, 255);
+        speedArr[i] = random(1, 3);
+    }
+
+}

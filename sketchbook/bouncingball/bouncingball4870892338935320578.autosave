@@ -1,0 +1,29 @@
+int speed = 1;
+int x = 0;
+int y = 0;
+int w = 40;
+int h = 40;
+
+void setup() {
+  size(400, 400);
+  
+}
+
+void draw() {
+
+  background(255);
+  stroke(0);
+  fill(100);
+  ellipse(x, y, w, h);
+
+
+  x = x + speed;
+  if((x > width ) || (x < 0)){
+    speed = speed * -1;
+    
+  }
+  if((y > height ) || (y < 0)){
+    speed = speed * -1;
+    
+  }
+}

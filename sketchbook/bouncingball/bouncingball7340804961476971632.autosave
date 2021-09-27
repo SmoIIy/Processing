@@ -1,0 +1,38 @@
+int speed = 1;
+
+//Ball
+int x = 0;
+int y = 0;
+int w = 40;
+int h = 40;
+
+
+
+void setup() {
+  size(400, 400);
+  
+}
+
+void draw() {
+
+  background(255);
+
+  x = x + speed;
+  y = y + speed;
+  if((x > width ) || (x < 0) || (y > height ) || (y < 0)){
+    speed = speed * -1;
+    speed++;
+  }
+  
+  stroke(0);
+  fill(100);
+  ellipse(x, y, w, h);
+  }
+
+
+  
+
+
+
+    
+  
