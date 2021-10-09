@@ -1,4 +1,5 @@
 class Timer {
+    
     int savedTime;
     int totalTime;
 
@@ -21,7 +22,9 @@ class Timer {
     }
 
     void display(){
-        println( (millis() / 1000) + " seconds has passed!");
-
+        fill(0);
+        int t;
+        t = ((millis() / 1000) /*+ " seconds has passed!"*/);
+        text(t, 35, height - 80);
     }
 }
